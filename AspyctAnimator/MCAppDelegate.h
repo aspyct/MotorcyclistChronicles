@@ -9,7 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface AAAppDelegate : NSObject <NSApplicationDelegate>
+#import "MCScene.h"
+
+@interface MCAppDelegate : NSObject <NSApplicationDelegate, MCSceneDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet SKView *skView;

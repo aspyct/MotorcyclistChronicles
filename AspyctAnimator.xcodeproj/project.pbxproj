@@ -13,14 +13,17 @@
 		740C96FC19103498007A73FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C96FB19103498007A73FD /* main.m */; };
 		740C970019103498007A73FD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 740C96FE19103498007A73FD /* Credits.rtf */; };
 		740C970219103498007A73FD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 740C970119103498007A73FD /* MainMenu.xib */; };
-		740C970419103498007A73FD /* AAMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C970319103498007A73FD /* AAMyScene.m */; };
-		740C970719103498007A73FD /* AAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C970619103498007A73FD /* AAAppDelegate.m */; };
+		740C970419103498007A73FD /* MCScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C970319103498007A73FD /* MCScene.m */; };
+		740C970719103498007A73FD /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C970619103498007A73FD /* MCAppDelegate.m */; };
 		740C970A19103498007A73FD /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 740C970919103498007A73FD /* Spaceship.png */; };
 		740C970C19103498007A73FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740C970B19103498007A73FD /* Images.xcassets */; };
 		740C971319103498007A73FD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C971219103498007A73FD /* XCTest.framework */; };
 		740C971419103498007A73FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C96ED19103497007A73FD /* Cocoa.framework */; };
 		740C971C19103498007A73FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 740C971A19103498007A73FD /* InfoPlist.strings */; };
 		740C971E19103498007A73FD /* AspyctAnimatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C971D19103498007A73FD /* AspyctAnimatorTests.m */; };
+		740C972D19104BE1007A73FD /* MCRoadNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C972C19104BE1007A73FD /* MCRoadNode.m */; };
+		740C973119104D2F007A73FD /* MCScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C973019104D2F007A73FD /* MCScenario.m */; };
+		740C973519104E1F007A73FD /* MC3BusScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C973419104E1F007A73FD /* MC3BusScenario.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +49,10 @@
 		740C96FD19103498007A73FD /* AspyctAnimator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AspyctAnimator-Prefix.pch"; sourceTree = "<group>"; };
 		740C96FF19103498007A73FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		740C970119103498007A73FD /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		740C970319103498007A73FD /* AAMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAMyScene.m; sourceTree = "<group>"; };
-		740C970519103498007A73FD /* AAMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAMyScene.h; sourceTree = "<group>"; };
-		740C970619103498007A73FD /* AAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAAppDelegate.m; sourceTree = "<group>"; };
-		740C970819103498007A73FD /* AAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAAppDelegate.h; sourceTree = "<group>"; };
+		740C970319103498007A73FD /* MCScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCScene.m; sourceTree = "<group>"; };
+		740C970519103498007A73FD /* MCScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCScene.h; sourceTree = "<group>"; };
+		740C970619103498007A73FD /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		740C970819103498007A73FD /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
 		740C970919103498007A73FD /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		740C970B19103498007A73FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		740C971119103498007A73FD /* AspyctAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AspyctAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +60,12 @@
 		740C971919103498007A73FD /* AspyctAnimatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AspyctAnimatorTests-Info.plist"; sourceTree = "<group>"; };
 		740C971B19103498007A73FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		740C971D19103498007A73FD /* AspyctAnimatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspyctAnimatorTests.m; sourceTree = "<group>"; };
+		740C972B19104BE1007A73FD /* MCRoadNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRoadNode.h; sourceTree = "<group>"; };
+		740C972C19104BE1007A73FD /* MCRoadNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRoadNode.m; sourceTree = "<group>"; };
+		740C972F19104D2F007A73FD /* MCScenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCScenario.h; sourceTree = "<group>"; };
+		740C973019104D2F007A73FD /* MCScenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCScenario.m; sourceTree = "<group>"; };
+		740C973319104E1F007A73FD /* MC3BusScenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC3BusScenario.h; sourceTree = "<group>"; };
+		740C973419104E1F007A73FD /* MC3BusScenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC3BusScenario.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +133,13 @@
 		740C96F519103497007A73FD /* AspyctAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				740C972E19104CF6007A73FD /* Scenarios */,
+				740C972A19104BC4007A73FD /* RoadElements */,
 				740C970119103498007A73FD /* MainMenu.xib */,
-				740C970319103498007A73FD /* AAMyScene.m */,
-				740C970519103498007A73FD /* AAMyScene.h */,
-				740C970619103498007A73FD /* AAAppDelegate.m */,
-				740C970819103498007A73FD /* AAAppDelegate.h */,
+				740C970319103498007A73FD /* MCScene.m */,
+				740C970519103498007A73FD /* MCScene.h */,
+				740C970619103498007A73FD /* MCAppDelegate.m */,
+				740C970819103498007A73FD /* MCAppDelegate.h */,
 				740C970919103498007A73FD /* Spaceship.png */,
 				740C970B19103498007A73FD /* Images.xcassets */,
 				740C96F619103498007A73FD /* Supporting Files */,
@@ -164,6 +175,34 @@
 				740C971A19103498007A73FD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		740C972A19104BC4007A73FD /* RoadElements */ = {
+			isa = PBXGroup;
+			children = (
+				740C972B19104BE1007A73FD /* MCRoadNode.h */,
+				740C972C19104BE1007A73FD /* MCRoadNode.m */,
+			);
+			path = RoadElements;
+			sourceTree = "<group>";
+		};
+		740C972E19104CF6007A73FD /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				740C973219104DE6007A73FD /* 3-bus */,
+				740C972F19104D2F007A73FD /* MCScenario.h */,
+				740C973019104D2F007A73FD /* MCScenario.m */,
+			);
+			path = Scenarios;
+			sourceTree = "<group>";
+		};
+		740C973219104DE6007A73FD /* 3-bus */ = {
+			isa = PBXGroup;
+			children = (
+				740C973319104E1F007A73FD /* MC3BusScenario.h */,
+				740C973419104E1F007A73FD /* MC3BusScenario.m */,
+			);
+			path = "3-bus";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +249,7 @@
 		740C96E219103497007A73FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = AA;
+				CLASSPREFIX = MC;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Antoine d'Otreppe";
 				TargetAttributes = {
@@ -265,9 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				740C970719103498007A73FD /* AAAppDelegate.m in Sources */,
-				740C970419103498007A73FD /* AAMyScene.m in Sources */,
+				740C973519104E1F007A73FD /* MC3BusScenario.m in Sources */,
+				740C973119104D2F007A73FD /* MCScenario.m in Sources */,
+				740C970719103498007A73FD /* MCAppDelegate.m in Sources */,
+				740C970419103498007A73FD /* MCScene.m in Sources */,
 				740C96FC19103498007A73FD /* main.m in Sources */,
+				740C972D19104BE1007A73FD /* MCRoadNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
