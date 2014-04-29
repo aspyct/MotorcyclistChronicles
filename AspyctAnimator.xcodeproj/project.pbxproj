@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		740C96EE19103497007A73FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C96ED19103497007A73FD /* Cocoa.framework */; };
+		740C96F019103497007A73FD /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C96EF19103497007A73FD /* SpriteKit.framework */; };
+		740C96FA19103498007A73FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 740C96F819103498007A73FD /* InfoPlist.strings */; };
+		740C96FC19103498007A73FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C96FB19103498007A73FD /* main.m */; };
+		740C970019103498007A73FD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 740C96FE19103498007A73FD /* Credits.rtf */; };
+		740C970219103498007A73FD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 740C970119103498007A73FD /* MainMenu.xib */; };
+		740C970419103498007A73FD /* AAMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C970319103498007A73FD /* AAMyScene.m */; };
+		740C970719103498007A73FD /* AAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C970619103498007A73FD /* AAAppDelegate.m */; };
+		740C970A19103498007A73FD /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 740C970919103498007A73FD /* Spaceship.png */; };
+		740C970C19103498007A73FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740C970B19103498007A73FD /* Images.xcassets */; };
+		740C971319103498007A73FD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C971219103498007A73FD /* XCTest.framework */; };
+		740C971419103498007A73FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C96ED19103497007A73FD /* Cocoa.framework */; };
+		740C971C19103498007A73FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 740C971A19103498007A73FD /* InfoPlist.strings */; };
+		740C971E19103498007A73FD /* AspyctAnimatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C971D19103498007A73FD /* AspyctAnimatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		740C971519103498007A73FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740C96E219103497007A73FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 740C96E919103497007A73FD;
+			remoteInfo = AspyctAnimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		740C96EA19103497007A73FD /* AspyctAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AspyctAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		740C96ED19103497007A73FD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		740C96EF19103497007A73FD /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		740C96F219103497007A73FD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		740C96F319103497007A73FD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		740C96F419103497007A73FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		740C96F719103498007A73FD /* AspyctAnimator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AspyctAnimator-Info.plist"; sourceTree = "<group>"; };
+		740C96F919103498007A73FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		740C96FB19103498007A73FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		740C96FD19103498007A73FD /* AspyctAnimator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AspyctAnimator-Prefix.pch"; sourceTree = "<group>"; };
+		740C96FF19103498007A73FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		740C970119103498007A73FD /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		740C970319103498007A73FD /* AAMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAMyScene.m; sourceTree = "<group>"; };
+		740C970519103498007A73FD /* AAMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAMyScene.h; sourceTree = "<group>"; };
+		740C970619103498007A73FD /* AAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAAppDelegate.m; sourceTree = "<group>"; };
+		740C970819103498007A73FD /* AAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAAppDelegate.h; sourceTree = "<group>"; };
+		740C970919103498007A73FD /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		740C970B19103498007A73FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		740C971119103498007A73FD /* AspyctAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AspyctAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		740C971219103498007A73FD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		740C971919103498007A73FD /* AspyctAnimatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AspyctAnimatorTests-Info.plist"; sourceTree = "<group>"; };
+		740C971B19103498007A73FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		740C971D19103498007A73FD /* AspyctAnimatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspyctAnimatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		740C96E719103497007A73FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740C96F019103497007A73FD /* SpriteKit.framework in Frameworks */,
+				740C96EE19103497007A73FD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740C970E19103498007A73FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740C971419103498007A73FD /* Cocoa.framework in Frameworks */,
+				740C971319103498007A73FD /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		740C96E119103497007A73FD = {
+			isa = PBXGroup;
+			children = (
+				740C96F519103497007A73FD /* AspyctAnimator */,
+				740C971719103498007A73FD /* AspyctAnimatorTests */,
+				740C96EC19103497007A73FD /* Frameworks */,
+				740C96EB19103497007A73FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		740C96EB19103497007A73FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				740C96EA19103497007A73FD /* AspyctAnimator.app */,
+				740C971119103498007A73FD /* AspyctAnimatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		740C96EC19103497007A73FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740C96ED19103497007A73FD /* Cocoa.framework */,
+				740C96EF19103497007A73FD /* SpriteKit.framework */,
+				740C971219103498007A73FD /* XCTest.framework */,
+				740C96F119103497007A73FD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		740C96F119103497007A73FD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740C96F219103497007A73FD /* AppKit.framework */,
+				740C96F319103497007A73FD /* CoreData.framework */,
+				740C96F419103497007A73FD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		740C96F519103497007A73FD /* AspyctAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				740C970119103498007A73FD /* MainMenu.xib */,
+				740C970319103498007A73FD /* AAMyScene.m */,
+				740C970519103498007A73FD /* AAMyScene.h */,
+				740C970619103498007A73FD /* AAAppDelegate.m */,
+				740C970819103498007A73FD /* AAAppDelegate.h */,
+				740C970919103498007A73FD /* Spaceship.png */,
+				740C970B19103498007A73FD /* Images.xcassets */,
+				740C96F619103498007A73FD /* Supporting Files */,
+			);
+			path = AspyctAnimator;
+			sourceTree = "<group>";
+		};
+		740C96F619103498007A73FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				740C96F719103498007A73FD /* AspyctAnimator-Info.plist */,
+				740C96F819103498007A73FD /* InfoPlist.strings */,
+				740C96FB19103498007A73FD /* main.m */,
+				740C96FD19103498007A73FD /* AspyctAnimator-Prefix.pch */,
+				740C96FE19103498007A73FD /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		740C971719103498007A73FD /* AspyctAnimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				740C971D19103498007A73FD /* AspyctAnimatorTests.m */,
+				740C971819103498007A73FD /* Supporting Files */,
+			);
+			path = AspyctAnimatorTests;
+			sourceTree = "<group>";
+		};
+		740C971819103498007A73FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				740C971919103498007A73FD /* AspyctAnimatorTests-Info.plist */,
+				740C971A19103498007A73FD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		740C96E919103497007A73FD /* AspyctAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740C972119103498007A73FD /* Build configuration list for PBXNativeTarget "AspyctAnimator" */;
+			buildPhases = (
+				740C96E619103497007A73FD /* Sources */,
+				740C96E719103497007A73FD /* Frameworks */,
+				740C96E819103497007A73FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AspyctAnimator;
+			productName = AspyctAnimator;
+			productReference = 740C96EA19103497007A73FD /* AspyctAnimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		740C971019103498007A73FD /* AspyctAnimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740C972419103498007A73FD /* Build configuration list for PBXNativeTarget "AspyctAnimatorTests" */;
+			buildPhases = (
+				740C970D19103498007A73FD /* Sources */,
+				740C970E19103498007A73FD /* Frameworks */,
+				740C970F19103498007A73FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				740C971619103498007A73FD /* PBXTargetDependency */,
+			);
+			name = AspyctAnimatorTests;
+			productName = AspyctAnimatorTests;
+			productReference = 740C971119103498007A73FD /* AspyctAnimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		740C96E219103497007A73FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Antoine d'Otreppe";
+				TargetAttributes = {
+					740C971019103498007A73FD = {
+						TestTargetID = 740C96E919103497007A73FD;
+					};
+				};
+			};
+			buildConfigurationList = 740C96E519103497007A73FD /* Build configuration list for PBXProject "AspyctAnimator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 740C96E119103497007A73FD;
+			productRefGroup = 740C96EB19103497007A73FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				740C96E919103497007A73FD /* AspyctAnimator */,
+				740C971019103498007A73FD /* AspyctAnimatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		740C96E819103497007A73FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740C970A19103498007A73FD /* Spaceship.png in Resources */,
+				740C970C19103498007A73FD /* Images.xcassets in Resources */,
+				740C96FA19103498007A73FD /* InfoPlist.strings in Resources */,
+				740C970019103498007A73FD /* Credits.rtf in Resources */,
+				740C970219103498007A73FD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740C970F19103498007A73FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740C971C19103498007A73FD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		740C96E619103497007A73FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740C970719103498007A73FD /* AAAppDelegate.m in Sources */,
+				740C970419103498007A73FD /* AAMyScene.m in Sources */,
+				740C96FC19103498007A73FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740C970D19103498007A73FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740C971E19103498007A73FD /* AspyctAnimatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		740C971619103498007A73FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 740C96E919103497007A73FD /* AspyctAnimator */;
+			targetProxy = 740C971519103498007A73FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		740C96F819103498007A73FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740C96F919103498007A73FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		740C96FE19103498007A73FD /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740C96FF19103498007A73FD /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		740C971A19103498007A73FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740C971B19103498007A73FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		740C971F19103498007A73FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		740C972019103498007A73FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		740C972219103498007A73FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AspyctAnimator/AspyctAnimator-Prefix.pch";
+				INFOPLIST_FILE = "AspyctAnimator/AspyctAnimator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		740C972319103498007A73FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AspyctAnimator/AspyctAnimator-Prefix.pch";
+				INFOPLIST_FILE = "AspyctAnimator/AspyctAnimator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		740C972519103498007A73FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AspyctAnimator.app/Contents/MacOS/AspyctAnimator";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AspyctAnimator/AspyctAnimator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AspyctAnimatorTests/AspyctAnimatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		740C972619103498007A73FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AspyctAnimator.app/Contents/MacOS/AspyctAnimator";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AspyctAnimator/AspyctAnimator-Prefix.pch";
+				INFOPLIST_FILE = "AspyctAnimatorTests/AspyctAnimatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		740C96E519103497007A73FD /* Build configuration list for PBXProject "AspyctAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740C971F19103498007A73FD /* Debug */,
+				740C972019103498007A73FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		740C972119103498007A73FD /* Build configuration list for PBXNativeTarget "AspyctAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740C972219103498007A73FD /* Debug */,
+				740C972319103498007A73FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		740C972419103498007A73FD /* Build configuration list for PBXNativeTarget "AspyctAnimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740C972519103498007A73FD /* Debug */,
+				740C972619103498007A73FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 740C96E219103497007A73FD /* Project object */;
+}
