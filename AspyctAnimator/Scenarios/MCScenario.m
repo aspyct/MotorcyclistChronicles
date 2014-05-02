@@ -30,16 +30,26 @@
 
 - (void)prepare:(MCScene *)scene
 {
-    
+    // Override me
+}
+
+- (void)finalStep:(MCScene *)scene
+{
+    // Override me
 }
 
 - (void)forward:(MCScene *)scene
 {
-    NSString *nextStep = self.steps[self.nextStep];
-    self.nextStep += 1;
-    
-    SEL nextStepSel = NSSelectorFromString(nextStep);
-    [self performSelector:nextStepSel withObject:scene];
+    if (self.nextStep < self.steps.count) {
+        NSString *nextStep = self.steps[self.nextStep];
+        self.nextStep += 1;
+        
+        SEL nextStepSel = NSSelectorFromString(nextStep);
+        [self performSelector:nextStepSel withObject:scene];
+    } else if (self.nextStep == self.steps.count) {
+        self.nextStep += 1;
+        [self finalStep:scene];
+    }
 }
 
 - (void)back:(MCScene *)scene

@@ -22,8 +22,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    /* Pick a size for the scene */
-    MCScene *scene = [MCScene sceneWithSize:CGSizeMake(1680, 1050)];
+    self.window.acceptsMouseMovedEvents = YES;
+    
+    /* Pick a size for the scene, sized for 720p */
+    MCScene *scene = [MCScene sceneWithSize:CGSizeMake(1280, 720)];
     
     scene.delegate = self;
 
@@ -31,8 +33,11 @@
     scene.scaleMode = SKSceneScaleModeAspectFit;
     
     self.scenario = [[MC3BusScenario alloc] init];
+    [self.scenario prepare:scene];
 
     [self.skView presentScene:scene];
+    
+    [self.window makeFirstResponder:scene];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {

@@ -11,9 +11,7 @@
 
 @interface MCScene ()
 
-@property (strong, nonatomic) SKSpriteNode *spaceship;
-@property (strong, nonatomic) NSArray *steps;
-@property (nonatomic) NSUInteger nextStep;
+@property (strong, nonatomic) SKLabelNode *mousePositionLabel;
 
 @end
 
@@ -28,22 +26,11 @@ enum {
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
-        
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
-        self.spaceship = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        self.steps = @[@"step1", @"step2"];
-        
-        /*
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
-         */
+        self.mousePositionLabel = [[SKLabelNode alloc] initWithFontNamed:@"Helvetica"];
+        self.mousePositionLabel.zPosition = 1;
+        self.mousePositionLabel.fontSize = 21;
+        self.mousePositionLabel.position = CGPointMake(50, 10);
+        [self addChild:self.mousePositionLabel];
     }
     return self;
 }
@@ -74,15 +61,32 @@ enum {
     NSLog(@"Mouse dragged");
 }
 
+- (void)rightMouseDown:(NSEvent *)theEvent
+{
+    NSLog(@"Right mouse up");
+}
+
+- (void)rightMouseUp:(NSEvent *)theEvent
+{
+    NSLog(@"Right mouse down");
+}
+
 -(void)mouseDown:(NSEvent *)theEvent
 {
     NSLog(@"Mouse down");
 }
 
+- (void)scrollWheel:(NSEvent *)theEvent
+{
+    NSLog(@"This is how i Scroll!");
+}
+
 - (void)mouseMoved:(NSEvent *)theEvent
 {
-    // TODO draw a temporary line
-    NSLog(@"Mouse moved");
+    CGFloat x = [theEvent locationInNode:self].x;
+    CGFloat y = [theEvent locationInNode:self].y;
+    self.mousePositionLabel.text = [NSString stringWithFormat:@"(%.0f,%.0f)", x, y];
+    
 }
 
 - (void)mouseUp:(NSEvent *)theEvent
@@ -90,28 +94,6 @@ enum {
     // TODO remove the temporary line
     // Or perform next step if no line is being drawn
     NSLog(@"Mouse up");
-}
-
-- (void)step1
-{
-    CGRect roadRect = CGRectMake(200, 200, 300, 500);
-    MCRoadNode *road = [MCRoadNode roadInRect:roadRect lanes:2];
-    [self addChild:road];
-    
-    self.spaceship.position = CGPointMake(200, 400);
-    self.spaceship.scale = 0.5;
-    
-    SKAction *action = [SKAction group:@[[SKAction rotateByAngle:M_PI duration:1],
-                                         [SKAction moveByX:200 y:20 duration:4]]];
-    
-    [self.spaceship runAction:action];
-    [self addChild:self.spaceship];
-}
-
-- (void)step2
-{
-    SKAction *action = [SKAction scaleTo:1 duration:2];
-    [self.spaceship runAction:action];
 }
 
 - (void)lastStep

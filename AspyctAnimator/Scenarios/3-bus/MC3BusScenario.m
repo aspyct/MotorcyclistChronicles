@@ -17,23 +17,31 @@
     self = [super init];
     
     if (self) {
-        [self registerStep:@selector(onARoadWithTwoLanes:)];
         [self registerStep:@selector(theresABike:)];
     }
     
     return self;
 }
 
-- (void)onARoadWithTwoLanes:(MCScene *)scene
+- (void)prepare:(MCScene *)scene
 {
-    CGRect roadRect = CGRectMake(200, 200, 300, 500);
-    MCRoadNode *road = [MCRoadNode roadInRect:roadRect lanes:2];
-    [scene addChild:road];
+    SKTexture *texture = [SKTexture textureWithImageNamed:@"mc3-road"];
+    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:texture];
+    background.texture.filteringMode = SKTextureFilteringLinear;
+    background.position = CGPointMake(scene.size.width / 2, 0);
+    background.anchorPoint = CGPointMake(0.5, 0);
+    [background setScale:1];
+    
+    [scene addChild:background];
 }
 
 - (void)theresABike:(MCScene *)scene
 {
+    SKSpriteNode *motorcycle = [SKSpriteNode spriteNodeWithImageNamed:@"moto"];
+    motorcycle.position = CGPointMake(718, 101);
+    [motorcycle setScale:0.5];
     
-}
+    [scene addChild:motorcycle];
+};
 
 @end

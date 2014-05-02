@@ -24,6 +24,7 @@
 		740C972D19104BE1007A73FD /* MCRoadNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C972C19104BE1007A73FD /* MCRoadNode.m */; };
 		740C973119104D2F007A73FD /* MCScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C973019104D2F007A73FD /* MCScenario.m */; };
 		740C973519104E1F007A73FD /* MC3BusScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 740C973419104E1F007A73FD /* MC3BusScenario.m */; };
+		74A6ACC01913DA8100CC183F /* mc3-road.png in Resources */ = {isa = PBXBuildFile; fileRef = 74A6ACBF1913DA8100CC183F /* mc3-road.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		740C973019104D2F007A73FD /* MCScenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCScenario.m; sourceTree = "<group>"; };
 		740C973319104E1F007A73FD /* MC3BusScenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC3BusScenario.h; sourceTree = "<group>"; };
 		740C973419104E1F007A73FD /* MC3BusScenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MC3BusScenario.m; sourceTree = "<group>"; };
+		74A6ACBF1913DA8100CC183F /* mc3-road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mc3-road.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		740C973219104DE6007A73FD /* 3-bus */ = {
 			isa = PBXGroup;
 			children = (
+				74A6ACBF1913DA8100CC183F /* mc3-road.png */,
 				740C973319104E1F007A73FD /* MC3BusScenario.h */,
 				740C973419104E1F007A73FD /* MC3BusScenario.m */,
 			);
@@ -285,6 +288,7 @@
 				740C970C19103498007A73FD /* Images.xcassets in Resources */,
 				740C96FA19103498007A73FD /* InfoPlist.strings in Resources */,
 				740C970019103498007A73FD /* Credits.rtf in Resources */,
+				74A6ACC01913DA8100CC183F /* mc3-road.png in Resources */,
 				740C970219103498007A73FD /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +520,7 @@
 				740C972319103498007A73FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		740C972419103498007A73FD /* Build configuration list for PBXNativeTarget "AspyctAnimatorTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				740C972619103498007A73FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
