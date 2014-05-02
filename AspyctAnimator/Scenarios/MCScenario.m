@@ -28,27 +28,27 @@
     return self;
 }
 
-- (void)prepare:(MCScene *)scene
+- (void)prepare
 {
     // Override me
 }
 
-- (void)finalStep:(MCScene *)scene
+- (void)finalStep
 {
     // Override me
 }
 
-- (void)forward:(MCScene *)scene
+- (void)forward
 {
     if (self.nextStep < self.steps.count) {
         NSString *nextStep = self.steps[self.nextStep];
         self.nextStep += 1;
         
         SEL nextStepSel = NSSelectorFromString(nextStep);
-        [self performSelector:nextStepSel withObject:scene];
+        [self performSelector:nextStepSel withObject:nil];
     } else if (self.nextStep == self.steps.count) {
         self.nextStep += 1;
-        [self finalStep:scene];
+        [self finalStep];
     }
 }
 

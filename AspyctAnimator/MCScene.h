@@ -15,6 +15,7 @@
 @required
 - (void)nextStepRequested:(MCScene *)scene;
 - (void)previousStepRequested:(MCScene *)scene;
+- (void)resetRequested:(MCScene *)scene;
 
 @end
 

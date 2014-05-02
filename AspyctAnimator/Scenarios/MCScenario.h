@@ -13,12 +13,13 @@
 
 #pragma mark - Public interface
 
-- (void)forward:(MCScene *)scene;
+- (id)initWithScene:(MCScene *)scene;
+- (void)forward;
 
 #pragma mark - Protected interface
 
 - (void)registerStep:(SEL)step;
-- (void)prepare:(MCScene *)scene;
-- (void)finalStep:(MCScene *)scene;
+- (void)prepare;
+- (void)finalStep;
 
 @end

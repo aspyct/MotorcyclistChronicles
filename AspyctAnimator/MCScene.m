@@ -12,6 +12,7 @@
 @interface MCScene ()
 
 @property (strong, nonatomic) SKLabelNode *mousePositionLabel;
+@property (strong, nonatomic) SKShapeNode *drawnShape;
 
 @end
 
@@ -19,7 +20,10 @@ enum {
     ARROW_LEFT = 123,
     ARROW_RIGHT = 124,
     ARROW_DOWN = 125,
-    ARROW_UP = 126
+    ARROW_UP = 126,
+    SPACE = 49,
+    BACKSPACE = 51,
+    DELETE = 117
 };
 
 @implementation MCScene
@@ -45,40 +49,82 @@ enum {
     switch (theEvent.keyCode) {
         case ARROW_RIGHT:
         {
-            [self.delegate nextStepRequested:self];
+            if (!self.paused) {
+                [self.delegate nextStepRequested:self];
+            }
             break;
         }
         case ARROW_LEFT:
         {
-            [self.delegate previousStepRequested:self];
+            if (!self.paused) {
+                [self.delegate previousStepRequested:self];
+            }
             break;
+        }
+        case BACKSPACE:
+        {
+            [self reset];
+            break;
+        }
+        case SPACE:
+        {
+            self.paused = !self.paused;
+        }
+        case DELETE:
+        {
+            [self removeDrawings];
+            break;
+        }
+        default:
+        {
+            NSLog(@"Pressed key: %u", theEvent.keyCode);
         }
     }
 }
 
+- (void)reset
+{
+    [self.delegate resetRequested:self];
+    self.paused = NO;
+    
+    [self removeDrawings];
+}
+
+- (void)removeDrawings
+{
+    [self.drawnShape removeFromParent];
+    self.drawnShape = nil;
+}
+
+- (void)mouseDown:(NSEvent *)theEvent
+{
+    CGPoint location = [theEvent locationInNode:self];
+    CGMutablePathRef path;
+    
+    if (self.drawnShape == nil) {
+        self.drawnShape = [[SKShapeNode alloc] init];
+        [self addChild:self.drawnShape];
+        
+        path = CGPathCreateMutable();
+    } else {
+        path = CGPathCreateMutableCopy(self.drawnShape.path);
+    }
+    
+    CGPathMoveToPoint(path, NULL, location.x, location.y);
+    self.drawnShape.strokeColor = [NSColor redColor];
+    self.drawnShape.path = path;
+    
+}
+
 - (void)mouseDragged:(NSEvent *)theEvent
 {
-    NSLog(@"Mouse dragged");
-}
-
-- (void)rightMouseDown:(NSEvent *)theEvent
-{
-    NSLog(@"Right mouse up");
-}
-
-- (void)rightMouseUp:(NSEvent *)theEvent
-{
-    NSLog(@"Right mouse down");
-}
-
--(void)mouseDown:(NSEvent *)theEvent
-{
-    NSLog(@"Mouse down");
-}
-
-- (void)scrollWheel:(NSEvent *)theEvent
-{
-    NSLog(@"This is how i Scroll!");
+    CGPoint location = [theEvent locationInNode:self];
+    
+    CGMutablePathRef path = CGPathCreateMutableCopy(self.drawnShape.path);
+    CGPathAddLineToPoint(path, NULL, location.x, location.y);
+    self.drawnShape.path = path;
+    
+    // TODO Some CGPaths are probably leaking
 }
 
 - (void)mouseMoved:(NSEvent *)theEvent
@@ -86,14 +132,6 @@ enum {
     CGFloat x = [theEvent locationInNode:self].x;
     CGFloat y = [theEvent locationInNode:self].y;
     self.mousePositionLabel.text = [NSString stringWithFormat:@"(%.0f,%.0f)", x, y];
-    
-}
-
-- (void)mouseUp:(NSEvent *)theEvent
-{
-    // TODO remove the temporary line
-    // Or perform next step if no line is being drawn
-    NSLog(@"Mouse up");
 }
 
 - (void)lastStep
@@ -110,7 +148,5 @@ enum {
     [self addChild:label];
     [label runAction:[SKAction scaleTo:1 duration:0.3]];
 }
-
-#pragma mark - Helpers
 
 @end

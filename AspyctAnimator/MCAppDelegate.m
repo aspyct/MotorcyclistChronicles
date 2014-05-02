@@ -31,12 +31,10 @@
 
     /* Set the scale mode to scale to fit the window */
     scene.scaleMode = SKSceneScaleModeAspectFit;
-    
-    self.scenario = [[MC3BusScenario alloc] init];
-    [self.scenario prepare:scene];
 
-    [self.skView presentScene:scene];
+    [self resetRequested:scene];
     
+    [self.skView presentScene:scene];
     [self.window makeFirstResponder:scene];
 }
 
@@ -48,12 +46,18 @@
 
 - (void)nextStepRequested:(MCScene *)scene
 {
-    [self.scenario forward:scene];
+    [self.scenario forward];
 }
 
 - (void)previousStepRequested:(MCScene *)scene
 {
     NSLog(@"Back");
+}
+
+- (void)resetRequested:(MCScene *)scene
+{
+    self.scenario = [[MC3BusScenario alloc] initWithScene:scene];
+    [self.scenario prepare];
 }
 
 @end
